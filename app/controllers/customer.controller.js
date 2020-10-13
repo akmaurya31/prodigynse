@@ -85,7 +85,7 @@ exports.findOne1users = (req, res) => {
 //console.log("-------ss--------------------"+res1);
 // const assign_dob_in_data = Object.assign(data, frmt_dob1);    
 //       console.log(assign_dob_in_data);
-const textc = { 'message' : 'Successfully Found', 'status' : '200', 'data':res1 };   
+const textc = { 'message' : 'Successfully Found', 'status' : '200', 'data':data };   
         res.send(textc);    
     }
   });
