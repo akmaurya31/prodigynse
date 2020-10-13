@@ -81,7 +81,9 @@ const dateObj = {month, day, year};
 const cdateObj=day+'/'+month+'/'+year;
 const frmt_dob1={'frmt_dob':cdateObj};
          
-//const assign_dob_in_data = Object.assign(data, frmt_dob1);
+const assign_dob_in_data = Object.assign(data, frmt_dob1);
+      console.log("-------ss--------------------");
+      console.log(assign_dob_in_data);
 const textc = { 'message' : 'Successfully Found', 'status' : '200', data:data};   
         res.send(textc);    
     }
