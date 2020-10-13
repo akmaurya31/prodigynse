@@ -81,7 +81,7 @@ exports.findOne1users = (req, res) => {
 // '{ "firstName":"Peter" , "lastName":"Jones" } ]}';
       
       
-        var textd = "{ 'message' : 'Successfully Found', 'status' : '200', 'data' : data}";
+        var textd = "{ 'message' : 'Successfully Found', 'status' : '200', 'data' :" + data + "}";
         
         
 //         [' +
