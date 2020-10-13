@@ -76,13 +76,13 @@ exports.findOne1users = (req, res) => {
 const str= data.date_of_birrth.split(' ')[0];
 const res = str.substring(0,10);      
 const date = res;
-const [year, month, day] = date.split('-');
-const dateObj = {month, day, year};
-const cdateObj=day+'/'+month+'/'+year;
-const frmt_dob1={'frmt_dob':cdateObj};
-         
-const assign_dob_in_data = Object.assign(data, frmt_dob1);
-      console.log("-------ss--------------------");
+// const [year, month, day] = date.split('-');
+// const dateObj = {month, day, year};
+// const cdateObj=day+'/'+month+'/'+year;
+// const frmt_dob1={'frmt_dob':cdateObj};
+console.log("-------ss--------------------");
+//const assign_dob_in_data = Object.assign(data, frmt_dob1);
+    
       console.log(assign_dob_in_data);
 const textc = { 'message' : 'Successfully Found', 'status' : '200', data:data};   
         res.send(textc);    
