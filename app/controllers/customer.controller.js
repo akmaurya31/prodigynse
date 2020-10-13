@@ -68,60 +68,21 @@ exports.findOne1users = (req, res) => {
           message: "Error retrieving Customer with id " + req.params.emailId
         });
       }
-    } else {
-      
-            //var rm['res']='234'; 
-           // var rm['status']='success'; 
-            //var rm['data']=data;
-            // var rm="ddds";
-      
-//     var textd = '{ "employees" : [' +
-// '{ "firstName":"John" , "lastName":"Doe" },' +
-// '{ "firstName":"Anna" , "lastName":"Smith" },' +
-// '{ "firstName":"Peter" , "lastName":"Jones" } ]}';
-      
-      
-       // var textd = "{ 'message' : 'Successfully Found', 'status' : '200', 'data' :" + data + "}";
-        
-//       var id=data.id;
-//       var name=data.name;
-//       var user_id=data.user_id;
-//       var date_of_birrth=data.date_of_birrth;
-      
-      //var kes=[id,name,user_id]
-      
-        // var textd = "{ 'message' : 'Successfully Found', 'status' : '200', 'data' :" + data + "}";
-      
-      
-//         [' +
-// '{ "firstName":"John" , "lastName":"Doe" },' +
-// '{ "firstName":"Anna" , "lastName":"Smith" },' +
-// '{ "firstName":"Peter" , "lastName":"Jones" } ]}';
-      
-      
+    } else {   
+             
+     
 //       {"id":1,"name":"ajay","user_id":"","email":"akmaurya31@gmail.com","pin":0,"phone":"9616118873","email_verified_at":null,"password":"$2y$10$PRNuNEtQfJoCnJ.yoM9y/uYHft5YfIUGKalyF3UqBUGBcpb6JvZDy","role":2,"profile_pic":null,"address":"Lucknow","locallity":"bfc","pincode":226010,"country":101,"state":"Utter paradesh","city":"Lucknow","date_of_birrth":"1995-03-03T00:00:00.000Z","father_name":"MrLalji Mauray","mother_name":"N","gender":"2","material_status":1,"birth_palce":"lucknow","occupation":3,"income_range":1,"resident_status":"1","othertaxpayer":null,"exposedPolitically":null,"taxIdentificationNo":"12346097653","taxcountry":null,"identificationType":"commercial","signature":"public/uploads/signature/159860911077579.jpg","remember_token":"rnAc63UZGO","created_at":"2020-07-30T06:28:32.000Z","updated_at":"2020-09-17T20:48:46.000Z","otp":0,"status":1,"pan_card":"dtyrrt","social_id":"","address_proof":null,"iin":"","ID_NUMBER":""}
-      
-      
+            
 const str= data.date_of_birrth.split(' ')[0];
-const res = str.substring(0,10);
-      
+const res = str.substring(0,10);      
 const date = res;
 const [year, month, day] = date.split('-');
 const dateObj = {month, day, year};
-
 const cdateObj=day+'/'+month+'/'+year;
 const frmt_dob1={'frmt_dob':cdateObj};
-      
-      const assign_dob_in_data = Object.assign(data, frmt_dob1);
-      
-      
-      const textc = { 'message' : 'Successfully Found', 'status' : '200', data:assign_dob_in_data};
-    //  var dg=data.date_of_birrth;
-      
-      
-      
-            res.send(textc);
-    
+const assign_dob_in_data = Object.assign(data, frmt_dob1);
+const textc = { 'message' : 'Successfully Found', 'status' : '200', data:assign_dob_in_data};   
+        res.send(textc);    
     }
   });
 };
