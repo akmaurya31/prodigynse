@@ -1,5 +1,5 @@
 const Customer = require("../models/customer.model.js");
-var substring = require("../../node_modules/substring");
+// var substring = require("../../node_modules/substring");
 //var curl = require("../../node_modules/models/curl");
 // Create and Save a new Customer
 exports.create = (req, res) => {
