@@ -73,10 +73,17 @@ exports.findOne1users = (req, res) => {
             //var rm['res']='234'; 
            // var rm['status']='success'; 
             //var rm['data']=data;
-             var rm="ddds";
+            // var rm="ddds";
+      
+    var textd = '{ "employees" : [' +
+'{ "firstName":"John" , "lastName":"Doe" },' +
+'{ "firstName":"Anna" , "lastName":"Smith" },' +
+'{ "firstName":"Peter" , "lastName":"Jones" } ]}';
       
       
-            res.send(rm);
+      
+      
+            res.send(textd);
     
     }
   });
