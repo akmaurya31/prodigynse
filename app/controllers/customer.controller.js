@@ -70,9 +70,11 @@ exports.findOne1users = (req, res) => {
       }
     } else {
       
-            var rm['res']='234'; 
-            var rm['status']='success'; 
-            var rm['data']=data;
+            //var rm['res']='234'; 
+           // var rm['status']='success'; 
+            //var rm['data']=data;
+             var rm="ddds";
+      
       
             res.send(rm);
     
