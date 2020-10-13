@@ -92,7 +92,7 @@ exports.findOne1users = (req, res) => {
       
       
       
-            res.send(textd);
+            res.send(data);
     
     }
   });
