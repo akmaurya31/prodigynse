@@ -75,10 +75,19 @@ exports.findOne1users = (req, res) => {
             //var rm['data']=data;
             // var rm="ddds";
       
-    var textd = '{ "employees" : [' +
-'{ "firstName":"John" , "lastName":"Doe" },' +
-'{ "firstName":"Anna" , "lastName":"Smith" },' +
-'{ "firstName":"Peter" , "lastName":"Jones" } ]}';
+//     var textd = '{ "employees" : [' +
+// '{ "firstName":"John" , "lastName":"Doe" },' +
+// '{ "firstName":"Anna" , "lastName":"Smith" },' +
+// '{ "firstName":"Peter" , "lastName":"Jones" } ]}';
+      
+      
+        var textd = "{ 'message' : 'Successfully Found', 'status' : '200', 'data' : data}";
+        
+        
+//         [' +
+// '{ "firstName":"John" , "lastName":"Doe" },' +
+// '{ "firstName":"Anna" , "lastName":"Smith" },' +
+// '{ "firstName":"Peter" , "lastName":"Jones" } ]}';
       
       
       
