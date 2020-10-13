@@ -80,10 +80,10 @@ let res1 = data.date_of_birrth.substring(0,10);
 // const dateObj = {month, day, year};
 // const cdateObj=day+'/'+month+'/'+year;
 // const frmt_dob1={'frmt_dob':cdateObj};
-/console.log("-------ss--------------------"+res1);
+//console.log("-------ss--------------------"+res1);
 // const assign_dob_in_data = Object.assign(data, frmt_dob1);    
 //       console.log(assign_dob_in_data);
-const textc = { 'message' : 'Successfully Found', 'status' : '200', 'data':data };   
+const textc = { 'message' : 'Successfully Found', 'status' : '200', 'data':res1 };   
         res.send(textc);    
     }
   });
