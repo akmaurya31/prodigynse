@@ -68,7 +68,15 @@ exports.findOne1users = (req, res) => {
           message: "Error retrieving Customer with id " + req.params.emailId
         });
       }
-    } else res.send(data);
+    } else {
+      
+            var rm['res']='234'; 
+            var rm['status']='success'; 
+            var rm['data']=data;
+      
+            res.send(rm);
+    
+    }
   });
 };
 
