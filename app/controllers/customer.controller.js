@@ -73,89 +73,21 @@ exports.findOne1users = (req, res) => {
       }
     } else {   
              
-     
-//       {"id":1,"name":"ajay","user_id":"","email":"akmaurya31@gmail.com","pin":0,"phone":"9616118873","email_verified_at":null,"password":"$2y$10$PRNuNEtQfJoCnJ.yoM9y/uYHft5YfIUGKalyF3UqBUGBcpb6JvZDy","role":2,"profile_pic":null,"address":"Lucknow","locallity":"bfc","pincode":226010,"country":101,"state":"Utter paradesh","city":"Lucknow","date_of_birrth":"1995-03-03T00:00:00.000Z","father_name":"MrLalji Mauray","mother_name":"N","gender":"2","material_status":1,"birth_palce":"lucknow","occupation":3,"income_range":1,"resident_status":"1","othertaxpayer":null,"exposedPolitically":null,"taxIdentificationNo":"12346097653","taxcountry":null,"identificationType":"commercial","signature":"public/uploads/signature/159860911077579.jpg","remember_token":"rnAc63UZGO","created_at":"2020-07-30T06:28:32.000Z","updated_at":"2020-09-17T20:48:46.000Z","otp":0,"status":1,"pan_card":"dtyrrt","social_id":"","address_proof":null,"iin":"","ID_NUMBER":""}
+     //      {"id":1,"name":"ajay","user_id":"","email":"akmaurya31@gmail.com","pin":0,"phone":"9616118873","email_verified_at":null,"password":"$2y$10$PRNuNEtQfJoCnJ.yoM9y/uYHft5YfIUGKalyF3UqBUGBcpb6JvZDy","role":2,"profile_pic":null,"address":"Lucknow","locallity":"bfc","pincode":226010,"country":101,"state":"Utter paradesh","city":"Lucknow","date_of_birrth":"1995-03-03T00:00:00.000Z","father_name":"MrLalji Mauray","mother_name":"N","gender":"2","material_status":1,"birth_palce":"lucknow","occupation":3,"income_range":1,"resident_status":"1","othertaxpayer":null,"exposedPolitically":null,"taxIdentificationNo":"12346097653","taxcountry":null,"identificationType":"commercial","signature":"public/uploads/signature/159860911077579.jpg","remember_token":"rnAc63UZGO","created_at":"2020-07-30T06:28:32.000Z","updated_at":"2020-09-17T20:48:46.000Z","otp":0,"status":1,"pan_card":"dtyrrt","social_id":"","address_proof":null,"iin":"","ID_NUMBER":""}
    
-const text = "some text BEFORE substring1 AFTER " +"some text BEFORE substring2 AFTER some text";
- var sse2= substrings.getAll("BEFORE ", " AFTER", text);
-      console.log(sse2);
       
-var names = 'Harry,John,Clark,Peter,Rohn,Alice';
-var nameArr = names.split(',');
-console.log(nameArr);
-      
-      var dated=data.date_of_birrth;
-      //var datxx=trim(data.date_of_birrth);
-      //var nw_date = dated.toString();
-      
-//       var mm = dated.getMonth()+1; 
-//       var dd=  dated.getDate();
-//       var yyyy= dated.getFullYear();
-      
-const str1 = '5';
-console.log(str1.padStart(2, '0'));
-      
-      
+      var dated=data.date_of_birrth;   
       
       var dd = String(dated.getDate()).padStart(2, '0');
       var mmm = String(dated.getMonth() + 1).padStart(2, '0');
       var yyyy = dated.getFullYear();
-     // console.log("SDFSDF--------------" + dd + "mm: " + mmm + 'YYYY:' + yyyy);
       
       var nefodate= dd + "-" + mmm + "-" + yyyy;
-      var frmt_dob1 ={ "datec" : nefodate };
-      
-      console.log("New DDMMYYYY Format for DateofBirth -----" + nefodate);
+      var frmt_dob1 ={ "date_of_birth" : nefodate };      
       
       const assign_dob_in_data = Object.assign(data, frmt_dob1);    
-      console.log("cccccccccccccccccccccccccc-dffff" + assign_dob_in_data);
-      
-      
-//       var mm = String(dated.getMonth() + 1).padStart(2, '0');
-//       var yyyy = dated.getFullYear();
-      
-     // console.log("mmmmkkkkk----ccccccccccc-" + "dd: " + dd + "mm: " + mm + "yyyy: " +yyyy);
-      
-      
-      ///console.log("------>>>>" + nw_date);
-      
-     /// var ssvv=moment().format('MMM D, YYYY');
-     /// console.log("------>>>><<<<<<<" + ssvv);
-      
-      
-   //   var datx="1998-09-16";
-//var datxArr = datx.split('-');
-//console.log(datxArr);
-      
-      
-      
-      
-      
-      
-//       var datx=data.date_of_birrth;
-//       var sse2cc= substrings.getAll("-", datx);
-//        console.log(sse2cc);
-      
-      
-     // var sse=substrings.getAll("-", data.date_of_birrth);
-   //   console.log(sse);
-      
-  //   var ss = data.date_of_birrth.slice(10);
-    
-   //   var ss="fffsdf 111 111 Ravi";
-    //  console.log(ss);
-//let str= data.date_of_birrth.split(' ')[0];
-//let res1 = data.date_of_birrth.substring(0,10);      
-// const date = res;
-// const [year, month, day] = date.split('-');
-// const dateObj = {month, day, year};
-// const cdateObj=day+'/'+month+'/'+year;
-// const frmt_dob1={'frmt_dob':cdateObj};
-//console.log("-------ss--------------------"+res1);
-// const assign_dob_in_data = Object.assign(data, frmt_dob1);    
-//       console.log(assign_dob_in_data);
-const textc = { 'message' : 'Successfully Found', 'status' : '200', 'data':data };   
-        res.send(textc);    
+      const textc = { 'message' : 'Successfully Found', 'status' : '200', 'data':data };   
+      res.send(textc);    
     }
   });
 };
