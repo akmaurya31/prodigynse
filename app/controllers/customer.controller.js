@@ -86,8 +86,10 @@ console.log(nameArr);
       
       
       var datx=data.date_of_birrth;
-//var nameArr = names.split(',');
-console.log(datx);
+var datxArr = names.split('-');
+console.log(datxArr);
+      
+      
       
       
       
