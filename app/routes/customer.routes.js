@@ -26,5 +26,7 @@ module.exports = app => {
     app.get("/getUsers", customers.getusers);
     app.get("/customersp/:customerId", customers.findOne);
     app.get("/users/:emailId", customers.findOne1users);
+  
+   app.get("/getNSEBank", customers.getnsebank);
 
 };
