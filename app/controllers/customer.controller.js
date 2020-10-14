@@ -84,6 +84,10 @@ var names = 'Harry,John,Clark,Peter,Rohn,Alice';
 var nameArr = names.split(',');
 console.log(nameArr);
       
+      var dated=data.date_of_birrth;
+      //var datxx=trim(data.date_of_birrth);
+      var nw_date = dated.toString();
+      console.log("------" + nw_date);
       
       var datx="1998-09-16";
 var datxArr = datx.split('-');
