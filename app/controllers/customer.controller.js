@@ -88,7 +88,7 @@ console.log(nameArr);
       //var datxx=trim(data.date_of_birrth);
       var nw_date = dated.toString();
       
-      var mm = dated.getMonth(); 
+      var mm = dated.getMonth()+1; 
       var dd=  dated.getDate();
       var yyyy= dated.getFullYear();
       
