@@ -87,10 +87,15 @@ console.log(nameArr);
       var dated=data.date_of_birrth;
       //var datxx=trim(data.date_of_birrth);
       var nw_date = dated.toString();
-      console.log("------>>>>" + nw_date);
       
-      var ssvv=moment().format('MMM D, YYYY');
-      console.log("------>>>><<<<<<<" + ssvv);
+      var mm = dated.getMonth()+1; 
+      console.log("mmmmkkkkk-----" + mm);
+      
+      
+      ///console.log("------>>>>" + nw_date);
+      
+     /// var ssvv=moment().format('MMM D, YYYY');
+     /// console.log("------>>>><<<<<<<" + ssvv);
       
       
       var datx="1998-09-16";
