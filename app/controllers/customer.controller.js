@@ -42,6 +42,25 @@ exports.findAll = (req, res) => {
   });
 };
 
+
+// Retrieve all Customers from the database.
+exports.getnsebank = (req, res) => {
+  console.log("saurabh Prajapati");
+  Customer.getAll((err, data) => {
+    if (err)
+      res.status(500).send({
+        message:
+          err.message || "Some error occurred w1111hile retrieving customers."
+      });
+    else res.send(data);
+  });
+};
+
+
+
+
+
+
 // Find a single Customer with a customerId
 exports.findOne = (req, res) => {
   Customer.findById(req.params.customerId, (err, data) => {
