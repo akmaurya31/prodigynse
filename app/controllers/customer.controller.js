@@ -52,7 +52,14 @@ exports.getnsebank = (req, res) => {
         message:
           err.message || "Some error occurred w1111hile retrieving customers."
       });
-    else res.send(data);
+    else { 
+      
+      const textc = { 'message' : 'Successfully', 'status' : '200', 'data':data };   
+      res.send(textc);    
+          
+         // res.send(data); 
+    
+    }
   });
 };
 
@@ -105,7 +112,7 @@ exports.findOne1users = (req, res) => {
       var frmt_dob1 ={ "date_of_birth" : nefodate };      
       
       const assign_dob_in_data = Object.assign(data, frmt_dob1);    
-      const textc = { 'message' : 'Successfully Found', 'status' : '200', 'data':data };   
+      const textc = { 'message' : 'Successfully', 'status' : '200', 'data':data };   
       res.send(textc);    
     }
   });
