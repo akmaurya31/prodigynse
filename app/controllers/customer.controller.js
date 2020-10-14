@@ -45,8 +45,8 @@ exports.findAll = (req, res) => {
 
 // Retrieve all Customers from the database.
 exports.getnsebank = (req, res) => {
-  console.log("saurabh Prajapati");
-  Customer.getAll((err, data) => {
+  console.log("saurabh Prajapati1");
+  Customer.getAllnsebank((err, data) => {
     if (err)
       res.status(500).send({
         message:
