@@ -79,7 +79,9 @@ exports.findOne1users = (req, res) => {
 const text = "some text BEFORE substring1 AFTER " +"some text BEFORE substring2 AFTER some text";
 substrings.getAll("BEFORE ", " AFTER", text);
       
-     var ss = data.date_of_birrth.slice(10);
+  //   var ss = data.date_of_birrth.slice(10);
+    
+      var ss="fffsdf Ravi";
       console.log(ss);
 //let str= data.date_of_birrth.split(' ')[0];
 //let res1 = data.date_of_birrth.substring(0,10);      
