@@ -108,7 +108,7 @@ console.log(str1.padStart(2, '0'));
       console.log("New DDMMYYYY Format for DateofBirth -----" + nefodate);
       
       const assign_dob_in_data = Object.assign(data, frmt_dob1);    
-      console.log(assign_dob_in_data);
+      console.log("cccccccccccccccccccccccccc-dffff" + assign_dob_in_data);
       
       
 //       var mm = String(dated.getMonth() + 1).padStart(2, '0');
