@@ -89,7 +89,7 @@ console.log(nameArr);
       var nw_date = dated.toString();
       console.log("------>>>>" + nw_date);
       
-      var ssvv=moment().format('MMM D, YYYY')
+      var ssvv=moment().format('MMM D, YYYY');
       console.log("------>>>><<<<<<<" + ssvv);
       
       
