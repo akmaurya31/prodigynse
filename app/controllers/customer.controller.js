@@ -80,9 +80,17 @@ const text = "some text BEFORE substring1 AFTER " +"some text BEFORE substring2 
  var sse2= substrings.getAll("BEFORE ", " AFTER", text);
       console.log(sse2);
       
-      var names = 'Harry,John,Clark,Peter,Rohn,Alice';
+var names = 'Harry,John,Clark,Peter,Rohn,Alice';
 var nameArr = names.split(',');
 console.log(nameArr);
+      
+      
+      var datx=data.date_of_birrth;
+//var nameArr = names.split(',');
+console.log(datx);
+      
+      
+      
       
 //       var datx=data.date_of_birrth;
 //       var sse2cc= substrings.getAll("-", datx);
