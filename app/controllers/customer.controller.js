@@ -103,7 +103,13 @@ console.log(str1.padStart(2, '0'));
      // console.log("SDFSDF--------------" + dd + "mm: " + mmm + 'YYYY:' + yyyy);
       
       var nefodate= dd + "-" + mmm + "-" + yyyy;
+      var frmt_dob1 ={ "datec" : nefodate };
+      
       console.log("New DDMMYYYY Format for DateofBirth -----" + nefodate);
+      
+      const assign_dob_in_data = Object.assign(data, frmt_dob1);    
+      console.log(assign_dob_in_data);
+      
       
 //       var mm = String(dated.getMonth() + 1).padStart(2, '0');
 //       var yyyy = dated.getFullYear();
