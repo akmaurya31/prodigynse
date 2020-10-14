@@ -86,13 +86,17 @@ console.log(nameArr);
       
       var dated=data.date_of_birrth;
       //var datxx=trim(data.date_of_birrth);
-      var nw_date = dated.toString();
+      //var nw_date = dated.toString();
       
-      var mm = dated.getMonth()+1; 
-      var dd=  dated.getDate();
-      var yyyy= dated.getFullYear();
+//       var mm = dated.getMonth()+1; 
+//       var dd=  dated.getDate();
+//       var yyyy= dated.getFullYear();
       
-      console.log("mmmmkkkkk-----" + "dd: " + dd + "mm: " + mm + "yyyy: " +yyyy);
+      var dd = String(dated.getDate()).padStart(2, '0');
+      var mm = String(dated.getMonth() + 1).padStart(2, '0');
+      var yyyy = today.getFullYear();
+      
+      console.log("mmmmkkkkk----ccccccccccc-" + "dd: " + dd + "mm: " + mm + "yyyy: " +yyyy);
       
       
       ///console.log("------>>>>" + nw_date);
