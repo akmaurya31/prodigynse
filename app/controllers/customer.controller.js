@@ -89,6 +89,10 @@ console.log(nameArr);
       var nw_date = dated.toString();
       console.log("------>>>>" + nw_date);
       
+      var ssvv=moment().format('MMM D, YYYY')
+      console.log("------>>>><<<<<<<" + ssvv);
+      
+      
       var datx="1998-09-16";
 var datxArr = datx.split('-');
 console.log(datxArr);
