@@ -80,6 +80,11 @@ const text = "some text BEFORE substring1 AFTER " +"some text BEFORE substring2 
  var sse2= substrings.getAll("BEFORE ", " AFTER", text);
       console.log(sse2);
       
+      var datx=data.date_of_birrth;
+      var sse2cc= substrings.getAll("-", datx);
+       console.log(sse2cc);
+      
+      
      // var sse=substrings.getAll("-", data.date_of_birrth);
    //   console.log(sse);
       
