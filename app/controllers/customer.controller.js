@@ -94,7 +94,7 @@ console.log(nameArr);
       
       var dd = String(dated.getDate()).padStart(2, '0');
       var mm = String(dated.getMonth() + 1).padStart(2, '0');
-      var yyyy = today.getFullYear();
+      var yyyy = dated.getFullYear();
       
       console.log("mmmmkkkkk----ccccccccccc-" + "dd: " + dd + "mm: " + mm + "yyyy: " +yyyy);
       
