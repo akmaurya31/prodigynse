@@ -76,8 +76,11 @@ exports.findOne1users = (req, res) => {
      
 //       {"id":1,"name":"ajay","user_id":"","email":"akmaurya31@gmail.com","pin":0,"phone":"9616118873","email_verified_at":null,"password":"$2y$10$PRNuNEtQfJoCnJ.yoM9y/uYHft5YfIUGKalyF3UqBUGBcpb6JvZDy","role":2,"profile_pic":null,"address":"Lucknow","locallity":"bfc","pincode":226010,"country":101,"state":"Utter paradesh","city":"Lucknow","date_of_birrth":"1995-03-03T00:00:00.000Z","father_name":"MrLalji Mauray","mother_name":"N","gender":"2","material_status":1,"birth_palce":"lucknow","occupation":3,"income_range":1,"resident_status":"1","othertaxpayer":null,"exposedPolitically":null,"taxIdentificationNo":"12346097653","taxcountry":null,"identificationType":"commercial","signature":"public/uploads/signature/159860911077579.jpg","remember_token":"rnAc63UZGO","created_at":"2020-07-30T06:28:32.000Z","updated_at":"2020-09-17T20:48:46.000Z","otp":0,"status":1,"pan_card":"dtyrrt","social_id":"","address_proof":null,"iin":"","ID_NUMBER":""}
    
-const text = "some text BEFORE substring1 AFTER " +"some text BEFORE substring2 AFTER some text";
-substrings.getAll("BEFORE ", " AFTER", text);
+//const text = "some text BEFORE substring1 AFTER " +"some text BEFORE substring2 AFTER some text";
+//substrings.getAll("BEFORE ", " AFTER", text);
+      
+      var sse=substrings.getAll("-", data.date_of_birrth);
+      console.log(sse);
       
   //   var ss = data.date_of_birrth.slice(10);
     
