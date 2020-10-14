@@ -99,7 +99,8 @@ console.log(str1.padStart(2, '0'));
       
       var dd = String(dated.getDate()).padStart(2, '0');
       var mmm = String(dated.getMonth() + 1).padStart(2, '0');
-      console.log("SDFSDF--------------" + dd + "mm: " + mmm);
+      var yyyy = dated.getFullYear();
+      console.log("SDFSDF--------------" + dd + "mm: " + mmm + 'YYYY:' + yyyy);
 //       var mm = String(dated.getMonth() + 1).padStart(2, '0');
 //       var yyyy = dated.getFullYear();
       
