@@ -92,11 +92,13 @@ console.log(nameArr);
 //       var dd=  dated.getDate();
 //       var yyyy= dated.getFullYear();
       
-      const str1 = '5';
-
+const str1 = '5';
 console.log(str1.padStart(2, '0'));
       
-//       var dd = String(dated.getDate()).padStart(2, '0');
+      
+      
+      var dd = String(dated.getDate()).padStart(2, '0');
+      console.log("SDFSDF--------------"+dd);
 //       var mm = String(dated.getMonth() + 1).padStart(2, '0');
 //       var yyyy = dated.getFullYear();
       
