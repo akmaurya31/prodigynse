@@ -88,8 +88,11 @@ console.log(nameArr);
       //var datxx=trim(data.date_of_birrth);
       var nw_date = dated.toString();
       
-      var mm = dated.getMonth()+1; 
-      console.log("mmmmkkkkk-----" + mm);
+      var mm = dated.getMonth(); 
+      var dd=  dated.getDate();
+      var yyyy= dated.getFullYear();
+      
+      console.log("mmmmkkkkk-----" + "dd: " + dd + "mm: " + mm + "yyyy: " +yyyy);
       
       
       ///console.log("------>>>>" + nw_date);
@@ -98,9 +101,9 @@ console.log(nameArr);
      /// console.log("------>>>><<<<<<<" + ssvv);
       
       
-      var datx="1998-09-16";
-var datxArr = datx.split('-');
-console.log(datxArr);
+   //   var datx="1998-09-16";
+//var datxArr = datx.split('-');
+//console.log(datxArr);
       
       
       
