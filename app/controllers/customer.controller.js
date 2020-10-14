@@ -92,11 +92,15 @@ console.log(nameArr);
 //       var dd=  dated.getDate();
 //       var yyyy= dated.getFullYear();
       
-      var dd = String(dated.getDate()).padStart(2, '0');
-      var mm = String(dated.getMonth() + 1).padStart(2, '0');
-      var yyyy = dated.getFullYear();
+      const str1 = '5';
+
+console.log(str1.padStart(2, '0'));
       
-      console.log("mmmmkkkkk----ccccccccccc-" + "dd: " + dd + "mm: " + mm + "yyyy: " +yyyy);
+//       var dd = String(dated.getDate()).padStart(2, '0');
+//       var mm = String(dated.getMonth() + 1).padStart(2, '0');
+//       var yyyy = dated.getFullYear();
+      
+     // console.log("mmmmkkkkk----ccccccccccc-" + "dd: " + dd + "mm: " + mm + "yyyy: " +yyyy);
       
       
       ///console.log("------>>>>" + nw_date);
