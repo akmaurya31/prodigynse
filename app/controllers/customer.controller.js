@@ -1,6 +1,10 @@
 const Customer = require("../models/customer.model.js");
 const substrings = require("../../node_modules/substrings");
 
+const parser = require('../../node_modules/xml2json');
+const https = require('../../node_modules/https');
+var mysql = require('../../node_modules/mysql');
+
 // var substring = require("../../node_modules/substring");
 //var curl = require("../../node_modules/models/curl");
 // Create and Save a new Customer
@@ -64,7 +68,24 @@ exports.getnsebank = (req, res) => {
 };
 
 
+exports.getnseproduct=(req,res)=>{
+  var api_url = 'https://uat.nsenmf.com/NMFIIService/NMFService/product?BrokerCode=ARN-21399&Appln_Id=MFS21399&Password=Account@2121';
+  https.get(api_url, (resp) => {
+  let data = '';
+  // A chunk of data has been recieved.
+  resp.on('data', (chunk) => {
+    data += chunk;
+  });
+  // The whole response has been received. Print out the result.
+  resp.on('end', () => {
+    console.log(JSON.parse(data).explanation);
+  });
 
+   }).on("error", (err) => {
+  console.log("Error: " + err.message);
+   });
+ 
+};
 
 
 
