@@ -28,5 +28,6 @@ module.exports = app => {
     app.get("/users/:emailId", customers.findOne1users);
   
    app.get("/getNSEBank", customers.getnsebank);
+  app.get("/getNSEProduct",customers.getnsebank);
 
 };
