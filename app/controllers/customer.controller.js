@@ -1,8 +1,8 @@
 const Customer = require("../models/customer.model.js");
 const substrings = require("../../node_modules/substrings");
 
-const parser = require('../../node_modules/xml2json');
-const https = require('../../node_modules/https');
+//const parser = require('../../node_modules/xml2json');
+//const https = require('../../node_modules/https');
 var mysql = require('../../node_modules/mysql');
 
 // var substring = require("../../node_modules/substring");
