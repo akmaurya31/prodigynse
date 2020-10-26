@@ -29,5 +29,6 @@ module.exports = app => {
   
    app.get("/getNSEBank", customers.getnsebank);
   app.get("/getNSEProduct",customers.getnsebank);
+  app.get("/getNSEProducts",customers.getnseproducts);
 
 };
