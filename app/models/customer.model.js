@@ -89,7 +89,18 @@ Customer.getAllnsebank = result => {
 };
 
 
+Customer.getAllnseproducts = result => {
+  sql.query("SELECT * FROM products", (err, res) => {
+    if (err) {
+      console.log("error: ", err);
+      result(null, err);
+      return;
+    }
 
+    console.log("NSEProductsList: ", res);
+    result(null, res);
+  });
+};
 
 
 Customer.getAllusers = result => {
