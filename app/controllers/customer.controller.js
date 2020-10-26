@@ -48,8 +48,7 @@ exports.findAll = (req, res) => {
 
 
 // Retrieve all Customers from the database.
-exports.getnsebank = (req, res) => {
-  console.log("saurabh Prajapati1");
+exports.getnsebank = (req, res) => {  
   Customer.getAllnsebank((err, data) => {
     if (err)
       res.status(500).send({
@@ -66,6 +65,28 @@ exports.getnsebank = (req, res) => {
     }
   });
 };
+
+
+exports.getnseproducts = (req, res) => {  
+  Customer.getAllnseproducts((err, data) => {
+    if (err)
+      res.status(500).send({
+        message:
+          err.message || "Some error occurred w1111hile retrieving customers."
+      });
+    else { 
+      
+      const textc = { 'message' : 'Successfully', 'status' : '200', 'data':data };   
+      res.send(textc);    
+          
+         // res.send(data); 
+    
+    }
+  });
+};
+
+
+
 
 
 exports.getnseproduct=(req,res)=>{
